@@ -1,0 +1,224 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* ======================THE NAV STYLES ============================*/
+nav{
+    text-align: center;
+    margin-top: 20px;
+    position: sticky;
+}
+
+.haybee{
+    color: #FD0505;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.mail, .tele{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+
+/* ==================THE HERO ( THE MAIN AREA)============================= */
+.abiodun{
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.contract{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.experience{
+    font-size: .7em;
+    margin-top: .5rem;
+}
+
+.work-btn{
+    background-color: #FD0505;
+    color: white;
+    padding: .7rem;
+    border: none;
+    font-size: 1em;
+    margin-top: .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.work-btn:hover{
+    background-color: #d41f1f;
+    color: whitesmoke;
+}
+
+.abbey{
+    width: 95%;
+    margin: auto;
+}
+#abbey{
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+
+/* ==========================FLEX IMAGE SECTION==================== */
+.job-img{
+    display: flex;
+    margin-top: 4rem;
+}
+#job-img{
+    width: 50%;
+}
+
+
+
+/* ======================EFFICIENCY SECTION===================== */
+.project-size{
+    font-size: 1.3em;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.time-quality{
+    margin-top: 2em;
+}
+
+#clock, #award{
+    width: 2rem;
+}
+#award{
+    margin-top: 4rem;
+}
+
+.delivery-quality{
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+}
+
+.efficiency-description{
+    font-size: .8em;
+}
+
+
+
+/* ========================= THE AVAILABILITY SECTION AND LINK TO MAIL SECTION =========================== */
+.avail-free{
+    margin-top: 4rem;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.talk{
+    font-size: .7em;
+    color: rgb(122, 122, 122);
+    margin-top: 5px;
+}
+
+.mail-btn{
+    background-color: #FD0505;
+    border: none;
+    padding: 15px;
+    color: wheat;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+.mail-btn:hover{
+    background-color: #d41f1f;
+}
+
+
+
+
+
+@media screen and (min-width:768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    /* THE HERO SECTION */
+    .hero-section{
+        display: flex;
+        justify-content: space-between;
+        max-width: 70%;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .hero-inner{
+        max-width: 60%;
+    }
+
+    .experience{
+        max-width: 250px;
+    }
+
+    .abbey{
+        width: 15rem;
+        margin-right: 0;
+    }
+
+
+    /* ====================EFFICIENCY SECTION==================== */
+    .efficiency{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .project-size{
+        max-width: 300px;
+    }
+
+    .time-quality{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #award{
+        margin-top: 0;
+    }
+
+    .time-quality-inner{
+        max-width: 40%;
+    }
+
+
+    /* =============THE AVAILABILITY SECTION AND LINK TO MAIL SECTION=================== */
+    .availability{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .avail-free{
+        max-width: 400px;
+    }
+
+    .talk{
+        max-width: 250px;
+    }
+}
