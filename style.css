@@ -20,6 +20,9 @@ nav{
     text-align: center;
     margin-top: 20px;
     position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 20px 50px ;
 }
 
 .haybee{
@@ -48,6 +51,7 @@ nav{
 .experience{
     font-size: .7em;
     margin-top: .5rem;
+    color: rgb(122, 122, 122);
 }
 
 .work-btn{
@@ -113,6 +117,7 @@ nav{
 
 .efficiency-description{
     font-size: .8em;
+    color: rgb(122, 122, 122);
 }
 
 
@@ -146,8 +151,16 @@ nav{
 }
 
 
+        /* ========FOOTER SECTION============= */
+.footer{
+    font-size: .7em;
+    width: 16rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
 
 
+/* ======================================MEDIA QUERY================================ */
 
 @media screen and (min-width:768px){
     nav{
