@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>haybee</title>
         <link rel="stylesheet" href="./style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         
@@ -27,7 +28,7 @@
 
             <main class="">
                 <section class="hero-section">
-                    <div class="hero-inner">
+                    <div class="hero-inner" data-aos="zoom-in" data-aos-duration="3000">
                         <p class="abiodun">
                             I’m Abiodun
                         </p>
@@ -48,7 +49,7 @@
                         
                     </div>
 
-                    <div class="abbey">
+                    <div class="abbey" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                         <img id="abbey" src="./abbey.png" alt="">
                     </div>
                 </section>
@@ -56,7 +57,7 @@
 
                                 <!-- ==============FLEX IMAGES SECTION =========== -->
                 <section class="">
-                    <div class="job-img">
+                    <div class="job-img" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                         <img id="job-img" src="./code.png" alt="">
                         <img id="job-img" src="./archy.png" alt="">
                     </div>
@@ -73,7 +74,7 @@
 
                             <!-- ======================================= -->
                     <div class="time-quality">
-                        <div class="time-quality-inner">
+                        <div class="time-quality-inner" data-aos="fade-down-left" data-aos-duration="2000" >
                             <img id="clock" src="./clock.png" alt="">
 
                             <p class="delivery-quality">
@@ -86,7 +87,7 @@
                         </div>
 
                                 <!-- ========================================== -->
-                        <div class="time-quality-inner">
+                        <div class="time-quality-inner" data-aos="fade-up-left" data-aos-duration="2000" >
                             <img id="award" src="./award1.png" alt="">
 
                             <p class="delivery-quality">
@@ -102,8 +103,8 @@
 
 
                         <!-- =============THE AVAILABILITY SECTION AND LINK TO MAIL SECTION=================== -->
-                <section class="availability">
-                    <div class="">
+                <section>
+                    <div class="" >
                         <p class="avail-free">
                             I’m currently available for freelance work.
                         </p>
@@ -118,15 +119,29 @@
                             </button>
                         </a>
                     </div>
-                </section>
+                </sectio>
 
 
                 <footer>
                     <div class="footer">
-                        &copy; Copyright King HayBee 2023. All rights reserved.
+                        &copy; Copyright King HayBee <span id="currentYear"></span>. All rights reserved.
                     </div>
                 </footer>
             </main>
         </div>
     </body>
+
+
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Update the copyright element with the current year
+        document.getElementById('currentYear').textContent = currentYear;
+    </script> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>

@@ -23,6 +23,7 @@ nav{
     top: 0;
     background-color: white;
     padding: 20px 50px ;
+    z-index: 1000;
 }
 
 .haybee{
